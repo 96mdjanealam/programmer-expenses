@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-7/12 md:w-2/5 m-auto">
+    <main class=" flex flex-col  bg-purple-300 rounded-xl p-4 space-y-4">
+        <h1 class="text-center py-2 font-bold text-lg text-purple-950">Programmer Expenses Assistant</h1>
+        <div class="flex justify-center gap-5">
+            <button id="assistant" class="px-4 py-2 font-bold text-white rounded-lg bg-purple-500">Assistant</button>
+            <button id="history" class="px-4 py-2 font-bold text-white rounded-lg bg-purple-500">History</button>
+        </div>
+        <!-- Assistant button page -->
+        <div class="flex flex-col space-y-4">
+            <div>
+                <p class="py-2">Income</p>
+                <input id="income" class="px-3 py-1 rounded-lg w-full" type="number" placeholder="Your income value">
+            </div>
+            <div class="flex gap-4">
+                <div class="w-1/2">
+                    <p class="py-2">Software</p>
+                    <input id="software" class="w-full px-3 py-1 rounded-lg" type="number">
+                </div>
+                <div class="w-1/2">
+                    <p class="py-2">Courses</p>
+                        <input id="courses" class="w-full px-3 py-1 rounded-lg" type="number">
+                </div>
+            </div>
+            <div>
+                <p class="py-2">Internet</p>
+                <input id="internet" class="px-3 py-1 rounded-lg w-full" type="number">
+            </div>
+
+            <button id="calculate" class="px-4 py-2 font-bold text-white rounded-lg bg-purple-500">Calculate</button>
+
+            <div>
+                <p class="py-2">Savings</p>
+                <input id="saving" class="px-3 py-1 rounded-lg w-full" type="number">
+
+            </div>
+            <button id="calculate-saving" class="px-4 py-2 font-bold text-white rounded-lg bg-purple-500">Calculate Savings</button>
+
+            <!-- result summary -->
+            <div>
+                <h2 class="text-center py-2 font-bold text-lg text-purple-950">Result Summary</h2>
+                <div class="space-y-4">
+                    <div class="flex">
+                        <div class="w-1/2">
+                            <p class="font-bold">Total Expenses</p>
+                            <p id="total-expenses">0</p>
+                        </div>
+                        <div class="w-1/2">
+                            <p class="font-bold">Balance</p>
+                            <p id="balance">0</p>
+                        </div>
+                    </div>
+                    <div class="flex ">
+                        <div class="w-1/2">
+                            <p class="font-bold">Saving Amount</p>
+                            <p id="saving-amount">0</p>
+                        </div>
+                        <div class="w-1/2">
+                            <p class="font-bold">Remaining Balance</p>
+                            <p id="remaining-balance">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- history button page -->
+         <div class="">
+            <h1 class="text-center py-2 font-bold text-lg text-purple-950">Expenses History</h1>
+            <p class="text-center">No history for now</p>
+            <div id="history-items">
+
+            </div>
+         </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
