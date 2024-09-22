@@ -69,14 +69,12 @@ document.getElementById("calculate-saving").addEventListener("click", function (
     const income = getInputNumberById("income");
     const expenses = parseFloat(document.getElementById("total-expenses").innerText);
 
-    let currentDate = new Date();
-    let cDate = currentDate.toLocaleDateString();
-    let cTime = currentDate.toLocaleTimeString();
+    const currentDate = new Date().toLocaleString();
 
     const newDiv = document.createElement("div");
     
     newDiv.innerHTML = `
-        <p class="text-sm">Date: ${cDate} Time: ${cTime}</p>
+        <p class="text-sm">Date: ${currentDate}</p>
         <p>Income: <span class="font-bold">${income}</span> Taka</p>
         <p>Expenses: <span class="font-bold">${expenses}</span> Taka</p>
         <p>Saving: <span class="font-bold">${savingAmount}</span> Taka</p>
