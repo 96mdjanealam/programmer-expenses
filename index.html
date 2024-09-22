@@ -16,7 +16,7 @@
             <button id="history" class="px-4 py-2 font-bold text-white rounded-lg bg-purple-500">History</button>
         </div>
         <!-- Assistant button page -->
-        <div class="flex flex-col space-y-4">
+        <div id="assistant-section" class="flex flex-col space-y-4">
             <div>
                 <p class="py-2">Income</p>
                 <input id="income" class="px-3 py-1 rounded-lg w-full" type="number" placeholder="Your income value">
@@ -39,7 +39,7 @@
             <button id="calculate" class="px-4 py-2 font-bold text-white rounded-lg bg-purple-500">Calculate</button>
 
             <div>
-                <p class="py-2">Savings</p>
+                <p class="py-2">Savings Percentage</p>
                 <input id="saving" class="px-3 py-1 rounded-lg w-full" type="number">
 
             </div>
@@ -73,10 +73,10 @@
             </div>
         </div>
         <!-- history button page -->
-         <div class="">
+         <div id="history-section" class="hidden">
             <h1 class="text-center py-2 font-bold text-lg text-purple-950">Expenses History</h1>
-            <p class="text-center">No history for now</p>
-            <div id="history-items">
+            <p id="no-history" class="text-center">No history for now</p>
+            <div id="history-items" class="space-y-4">
 
             </div>
          </div>
