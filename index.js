@@ -2,7 +2,6 @@
 function getInputNumberById(id) {
     const value = document.getElementById(id).value;
 
-
     if (value === '') {
         return 0;
     }
@@ -64,7 +63,7 @@ document.getElementById("calculate-saving").addEventListener("click", function (
     document.getElementById("saving-amount").innerText = savingAmount;
 
     const remainingBalance = balance - savingAmount;
-    
+
     document.getElementById("remaining-balance").innerText = remainingBalance;
 
     const income = getInputNumberById("income");
@@ -86,4 +85,4 @@ document.getElementById("calculate-saving").addEventListener("click", function (
     document.getElementById("history-items").appendChild(newDiv);
 
     document.getElementById("no-history").classList.add("hidden");
-})
+});
